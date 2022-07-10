@@ -1,0 +1,428 @@
+/* font-family */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&display=swap');
+
+/* font-family: 'Merriweather', serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style the Page */
+main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+/* Styling the header element */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #ff00aa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* styling the logo container */
+#logo-box {
+    width: 110px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    height: 110px;
+}
+
+/* styling the logo */
+header #logo-box #header-img {
+    width: 110px;
+    height: 110px;
+    background-image: none;
+    position: absolute;
+    top: -15px;
+    left: -9px;
+}
+
+/* styling the logo heading-container */
+header #heading {
+    margin: 0px 0px 0px 120px;   
+    height: 110px;
+    width: 330px;
+    font-size: 26px;
+    position: absolute;
+    top: -13px;
+    left: -130px;
+}
+
+/* styling the logo heading */
+header #heading h2 {
+    font-family: 'Merriweather', serif;
+    text-align: start;
+    margin: 10px auto;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 22px;
+    left: 110px;
+    font-size: 41px;
+}
+
+/* styling the navbar */
+header #nav-bar {
+    width: 66vw;
+    height: 110px;
+    position: relative;
+    left: 446px;
+    top: -6px;
+}
+
+/* styling the navbar un-ordered list */
+header #nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 50px 0px 50px 100px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;    
+}
+
+/* styling the navbar un-ordered lists items */
+header #nav-bar ul .nav-link {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* styling the un-ordered lists items > anchor tags */
+header #nav-bar ul .nav-link a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* styling the un-ordered lists items > anchor tags hover */
+header #nav-bar ul .nav-link a:hover {
+    color: rgb(255, 254, 254);
+}
+
+/* styling the hero-section */
+.hero-section {
+    width: 1349px;
+    height: 660px;
+    position: absolute;
+    top: 109px;
+    left: 0px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(249 161 201 / 65%), rgba(249 161 201 / 65%)), 
+    url("background-image.jpg") center center fixed;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;  
+    /* border: 5px solid black;   */
+}
+
+/* styling the hero section heading */
+.hero-section h1 {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    left: 250px;
+    top: 250px;
+    right: 250px;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    letter-spacing: 3px;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+/* styling the hero section form */
+.hero-section #form {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    left: 250px;
+    top: 325px;
+    right: 250px;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    letter-spacing: 3px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling the input=email in form */
+input[id="email"] {
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd1e7;
+    color: black;
+    font-size: 20px;
+}
+
+/* styling the submit button */
+input[id="submit"] {
+    padding: 14px;
+    width: 21%;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* styling the submit button hover */
+input[id="submit"]:hover {
+    background-color: #ff00aa;
+    color: black;
+}
+
+/* styling the online section */
+.online-section {
+    width: 1349px;
+    height: 674px;
+    position: absolute;
+    top: 769px;
+    left: 0;
+    background-color: #f223a057;
+    /* border: 5px solid black; */
+}
+
+/* styling the online section articles box */
+.online-section .article {
+    margin: 150px auto 80px;
+}
+
+/* styling the icons */
+.icon i {
+    font-size: 40px;
+    position: relative;
+    left: 100px;
+}
+
+/* styling the article-content box */
+.heading-paragraph {
+    position: absolute;
+    left: 200px;
+    margin-top: -66px;
+}
+
+/* styling the article-content heading */
+.heading-paragraph h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    margin-bottom: -14px;
+}
+
+/* styling the article-content paragraph */
+.heading-paragraph p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;    
+}
+
+/* styling the story section */
+.story-section {
+    width: 1349px;
+    height: 800px;
+    position: absolute;
+    top: 1443px;
+    left: 0;
+    right: 0;
+    /* padding: 20px auto; */
+    /* border: 5px solid black; */
+    background-color: #ff00aa8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling the video */
+.story-section .video {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* styling the flavor section */
+.flavor-section {
+    width: 1349px;
+    height: 750px;
+    position: absolute;
+    top: 2243px;
+    left: 0;
+    right: 0;
+    background-color: rgb(251 180 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 5px solid black; */
+}
+
+/* styling the flavor items */
+.flavor-section .items {
+    width: 300px;
+    height: 470px;
+    border: 1px solid black;
+    margin: auto;
+    /* background-color: #ff75d1; */
+    border-radius: 5px;
+}
+
+/* styling the flavor section items headings */
+.flavor-section .items .flavor-heading {
+    background-color: #ff75d1;
+    margin: -10px auto -50px;
+    border-radius: 5px 5px 0px 0px;
+    height: 144px;
+}
+
+/* styling the flavor-headings image 1 */
+.items .flavor-heading #img1 {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto 0px;
+    position: relative;
+    top: 2px;
+}
+
+/* styling the flavor-headings image 2 */
+.items .flavor-heading #img2 {
+    width: 144px;
+    height: 100px;
+    display: block;
+    margin: 10px auto 0px;
+}
+
+/* styling the flavor-headings image 3 */
+.items .flavor-heading #img3 {
+    width: 90px;
+    height: 100px;
+    display: block;
+    margin: 10px auto 0px;
+}
+
+/* styling the flavor-headings main headings */
+.flavor-section .items .flavor-heading h2 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin: 0px auto 0px;   
+}
+
+/* styling the flavor section items details */
+.flavor-section .items .flavor-detail {
+    background-color: #fbb4df;
+    position: relative;
+    bottom: -34px;
+}
+
+/* styling the flavor section items details headings */
+.flavor-section .items .flavor-detail h2 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    margin-top: 18px;
+    padding-top: 23px;
+}
+
+/* styling the flavor section items details paragraph */
+.flavor-section .items .flavor-detail p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* styling the order button */
+.order-button {
+    text-align: center;
+    display: block;
+    margin: 40px auto 20px;
+    padding: 15px;
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff00aa;
+    position: relative;
+    bottom: 7px;
+    cursor: pointer;
+}
+
+/* styling the order button on hover */
+.order-button:hover {
+    background-color: #aa0066;
+    color: white;
+}
+
+/* styling the footer */
+footer {
+    width: 100%;
+    height: 100px;
+    /* border: 5px solid black; */
+    position: absolute;
+    top: 2993px;
+    left: 0;
+    background-color: #ff75d1;
+}
+
+/* styling the terms */
+.terms {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* styling the terms un-ordered list */
+.terms ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    position: absolute;
+    top: 14px;
+}
+
+/* styling the terms un-ordered list items */
+.terms ul li {
+    margin: 0px 10px;
+}
+
+/* styling the terms un-ordered list items > anchor tag */
+.terms ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+/* styling the terms un-ordered list items > anchor tag on hover */
+.terms ul li a:hover {
+    color: rgb(255, 254, 254);
+}
+
+/* styling the terms paragraph */
+.terms p {
+    position: absolute;
+    bottom: 4px;
+    font-weight: bold;
+}
